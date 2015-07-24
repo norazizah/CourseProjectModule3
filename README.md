@@ -1,6 +1,6 @@
 # Assignment2
-Assignment2
-@@ -0,0 +1,106 @@
+
+
 ### Introduction
 
 This second programming assignment will require you to write an R
