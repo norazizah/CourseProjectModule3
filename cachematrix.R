@@ -7,15 +7,19 @@
 ##   - set the value of the inverse matrix
 ##   - get the value of the inverse matrix
 
+## Initialize the inverse property
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
   set <- function(y) {
     x <<- y
     i <<- NULL
   }
+  ## Method the get the matrix
   get <- function() x
+## Way to set the inverse of the matrix
   setinverse <- function(inv) i <<- inv
   getinverse <- function() i
+## Back a list of the methods
   list(
     set = set,
     get = get,
@@ -34,9 +38,14 @@ cacheSolve <- function(x, ...) {
     message("getting cached data")
     return(i)
   }
+## Compute the inverse of the unique matrix back by "makeCacheMatrix"
+## Back to a matrix  “m”
   m <- x$get()
+## Compute the inverse via matrix multiplication
   i <- solve(m, ...)
+## Set the inverse to the object
   x$setinverse(i)
+## Coming back the matrix
   i
 }
 
