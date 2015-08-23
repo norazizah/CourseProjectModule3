@@ -1,8 +1,7 @@
 Codebook for Coursera Course
 ========================
-[Getting and Cleaning Data](https://class.coursera.org/getdata-008)
 
-File: [tidyData.txt]
+File: [tidyData.txt] (https://github.com/norazizah/CourseProjectModule3/blob/master/tidydata.txt)
 
 
  Variable Name | Variable Type  | Values | Description
